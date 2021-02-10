@@ -8,8 +8,8 @@
 		{
 			"sources": [
 				{
-					"mode": "joystick",
-					"path": "/user/hand/right/input/joystick",
+					"mode": "trackpad",
+					"path": "/user/hand/right/input/trackpad",
 					"inputs":
 					{
 						"click":
@@ -19,8 +19,8 @@
 					}
 				},
 				{
-					"mode": "joystick",
-					"path": "/user/hand/left/input/joystick",
+					"mode": "trackpad",
+					"path": "/user/hand/left/input/trackpad",
 					"inputs":
 					{
 						"click":
@@ -30,13 +30,35 @@
 					}
 				},
 				{
-					"mode": "trigger",
-					"path": "/user/hand/left/input/trigger",
+					"mode": "button",
+					"path": "/user/hand/left/input/grip",
 					"inputs":
 					{
 						"click":
 						{
 							"output": "/actions/main/in/GrabLeft"
+						}
+					}
+				},
+				{
+					"mode": "button",
+					"path": "/user/hand/right/input/grip",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/GrabRight"
+						}
+					}
+				},
+				{
+					"mode": "button",
+					"path": "/user/hand/right/input/application_menu",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/Inventory"
 						}
 					}
 				},
@@ -47,7 +69,18 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/GrabRight"
+							"output": "/actions/main/in/RightFire"
+						}
+					}
+				},
+				{
+					"mode": "trigger",
+					"path": "/user/hand/left/input/trigger",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/LeftFire"
 						}
 					}
 				},
@@ -107,5 +140,5 @@
 			]
 		}
 	},
-	"description": ""
+	"description": "Virtual Reality BP Game Template-14469661"
 }
